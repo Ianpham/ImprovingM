@@ -106,7 +106,6 @@ class CARLA_Data(Dataset):
 
         data = dict()
         backbone = str(self.backbone, encoding='utf-8')
-
         images = self.images[index]
         bevs = self.bevs[index]
         depths = self.depths[index]
@@ -854,3 +853,34 @@ def decode_pil_to_npy(img):
 
     # hard coded to select
     return bev_array[10:12]
+
+
+
+# implement neural or graph neural network for better implementation and understand the relationship
+def mosiac_agumentation(data,img, type == 'image' or 'lidar'):
+    """apply mosiac for data agumentation"""
+    # current variable
+    # shape, imgs, hs, ws, labels, hyp, target_height (base on img or lidar), target_width
+    # imgs : number of img
+    # hs: is height list of list of image
+    # ws: is width list of list of image
+    # we have to need labels for make correct combo data (img vs labels - bbox)
+    # hyp contain: degrees, translate, scale, shear -> can work on config
+
+
+    ###############
+    # list all variable here to see how we can make make mosiac
+    # dz, dx, dy, x, y, z, yaw, speed, brake =  bbox 
+    # yaw : rotation or orientation of an object
+
+    
+    # we have combo of data here, question is, what it look like, what is dimension and value -> detect in getitem of data, using chatgpt for clarification dimension and value for example
+    data['bev'] = bevs_i
+    data['rgb'] = images_i
+    data['lidar'] = lidar_bev  # bir eye view (100,100)
+    data['label'] = label_pad # # number of object [1,m]
+    data['ego_waypoint'] = ego_waypoint # direction with 2d coordinate [100,200,0]
+
+    
+def random_affine(img):
+    """"""

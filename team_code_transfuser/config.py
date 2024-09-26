@@ -1,5 +1,5 @@
 import os
-
+# how about setting ray tune for this part
 class GlobalConfig:
     """ base architecture configurations """
 	# Data

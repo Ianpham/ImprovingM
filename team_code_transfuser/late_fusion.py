@@ -160,4 +160,3 @@ class LidarEncoder(nn.Module):
         self._model.global_pool = nn.Sequential()
         self._model.classifier = nn.Sequential()
         self._model.head = nn.Sequential()
-

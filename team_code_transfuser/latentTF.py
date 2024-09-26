@@ -31,6 +31,7 @@ class latentTFBackbone(nn.Module):
         self.image_encoder = ImageCNN(architecture=image_architecture, normalize=True)
         self.lidar_encoder = LidarEncoder(architecture=lidar_architecture, in_channels=in_channels)
 
+        # we can change detr or dino or mono detr in this situation
         self.transformer1 = GPT(n_embd=self.image_encoder.features.feature_info[1]['num_chs'],
                             n_head=config.n_head,
                             block_exp=config.block_exp,
@@ -217,7 +218,7 @@ class latentTFBackbone(nn.Module):
         return features, image_features_grid, fused_features
 
 
-
+# working on change gpt by transfomer in this situation, consider Swin with window attetion
 class GPT(nn.Module):
     """  the full GPT language model, with a context size of block_size """
 
