@@ -1,6 +1,3 @@
-# ImprovingM
-Adding Vmamba, FPN, Deformable Attention and Adversarial Attach for Tr
-=======
 # AttachedModuleForTransfuser
 
 This project extends the TransFuser model with additional modules for adversarial attacking and waypoint prediction. It incorporates Vmamba and Feature Pyramid Network (FPN) architectures, as well as Deformable Attention mechanisms.
