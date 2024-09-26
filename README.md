@@ -13,7 +13,7 @@ The main model is based on the TransFuser architecture from [autonomousvision/tr
 
 ## Key Features
 
-- **Adversarial Attacking**: Implementation of attack methods on the main TransFuser model and other related models.
+- **Adversarial Attacking**: Implementation of attack methods (Dart) on the main TransFuser model and other related models.
 - **Vmamba**: Integration of the Vmamba architecture for enhanced performance.
 - **FPN**: Utilization of Feature Pyramid Network for multi-scale feature representation.
 - **Deformable Attention**: Application of deformable attention mechanisms for more flexible and adaptive waypoint prediction.
@@ -25,7 +25,7 @@ This project draws inspiration and techniques from the following papers:
 1. [Adversarial Attack Method](https://arxiv.org/abs/2402.11120)
 2. [Vmamba: Visual State Space Models](https://arxiv.org/abs/2401.10166)
 3. [Deformable Attention Network](https://arxiv.org/abs/2201.00520)
-
+4. [DART: A Principled Approach to Adversarially Robust Unsupervised Domain Adaptation](https://arxiv.org/abs/2402.11120)
 ## Installation
 Please consider install Vmamba locally as in its repository
 
