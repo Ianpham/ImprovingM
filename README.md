@@ -55,4 +55,4 @@ Consider Jax for inner attention calculation to accelerate training and evaluati
 
 ## License ##
 This project is licensed under the Apache License 2.0 
->>>>>>> 51059e78e7df50d5a2ad06781f0148b1ae0d6d0a
+
