@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/main
 # AttachedModuleForTransfuser
 
 This project extends the TransFuser model with additional modules for adversarial attacking and waypoint prediction. It incorporates Vmamba and Feature Pyramid Network (FPN) architectures, as well as Deformable Attention mechanisms.
@@ -56,8 +52,5 @@ Consider Jax for inner attention calculation to accelerate training and evaluati
 
 ## License ##
 This project is licensed under the Apache License 2.0 
-<<<<<<< HEAD
->>>>>>> 51059e78e7df50d5a2ad06781f0148b1ae0d6d0a
-=======
 
 >>>>>>> origin/main
